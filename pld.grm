@@ -1,0 +1,54 @@
+"Start Symbol" = <program>
+
+!-----------------Terminal-------
+id = [_|{letter}]{alphanumeric}*
+digit = '-'?{digit}+('.'{digit}+)?
+
+!----------------Rules-----------
+<program> ::= <states>
+
+<states> ::= <state>
+            |<state> <states>
+
+<state>  ::= <whenstate>
+            |<ass>
+            |<repeatstate>
+            |<func>
+            |<funccall>
+
+<ass>    ::= let <id> '=' <exp>
+<exp>    ::= <exp>'+' <term>
+            |<exp>'-' <term>
+            |<term>
+<term>   ::= <term>'*'<factor>
+            |<term>'/'<factor>
+            |<term>'%'<factor>
+            |<factor>
+<factor> ::= <power>
+<power>  ::= <value>'^'<power>
+            |<value>
+<value>  ::= '('<exp>')'
+            |<id>
+            |<digit>
+
+<id>    ::= id
+<digit> ::= digit
+
+!-------when-----------
+<whenstate> ::= when <cond> do <states> else <states> end
+
+<cond>   ::= <exp> <op> <exp>
+            |<cond> and <cond>
+            |<cond> or <cond>
+<op>     ::= '>'|'<'|'=='|'!='|'>='|'<='
+
+!-------repeat---------------
+<repeatstate> ::= repeat <exp> times do <states> end
+
+!-----------func----------
+<func> ::= func <id> '('<params>')' do <states> end
+<funccall> ::= call <id> '('<params>')'
+
+<params> ::= <exp>
+            |<exp>','<params>
+            |
