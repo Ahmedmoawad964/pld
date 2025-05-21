@@ -1,0 +1,13 @@
+C:\Users\User\source\repos\gui_pld\gui_pld\bin\Debug\gui_pld.exe.config
+C:\Users\User\source\repos\gui_pld\gui_pld\bin\Debug\gui_pld.exe
+C:\Users\User\source\repos\gui_pld\gui_pld\bin\Debug\gui_pld.pdb
+C:\Users\User\source\repos\gui_pld\gui_pld\bin\Debug\CalithaLib.dll
+C:\Users\User\source\repos\gui_pld\gui_pld\bin\Debug\GoldParserEngine.dll
+C:\Users\User\source\repos\gui_pld\gui_pld\obj\Debug\gui_pld.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\gui_pld\gui_pld\obj\Debug\gui_pld.Form1.resources
+C:\Users\User\source\repos\gui_pld\gui_pld\obj\Debug\gui_pld.Properties.Resources.resources
+C:\Users\User\source\repos\gui_pld\gui_pld\obj\Debug\gui_pld.csproj.GenerateResource.cache
+C:\Users\User\source\repos\gui_pld\gui_pld\obj\Debug\gui_pld.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\gui_pld\gui_pld\obj\Debug\gui_pld.csproj.Up2Date
+C:\Users\User\source\repos\gui_pld\gui_pld\obj\Debug\gui_pld.exe
+C:\Users\User\source\repos\gui_pld\gui_pld\obj\Debug\gui_pld.pdb
